@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+
+    body{
+        display:flex;
+        height: 100vh;
+        flex-flow: column;
+        font-size: 16px;
+    }
+    .header{
+        outline:1px solid gold;
+        height:3rem
+    }
+    .content{
+        
+        display: flex;
+        height: inherit;/*hereda la alyura*/
+    }
+    .footer{
+        outline:1px solid red;
+        height: 6rem;
+        margin-top:auto;
+    }
+    .contentt{
+        outline:1px solid lime;
+        flex:1;
+    }
+    .aside{
+      outline:1px solid purple;
+      height: 6rem;
+        flex: 0 0 25%;  /*flex-grow flex-shrink flex-basis(valores relativos, absolutos)*/
+    }
+    .Menu{
+        display:flex;
+    }
+    .menu-item{
+        list-style: none;
+        flex:1;
+        outline: 1px solid cyan;
+        line-height: 3rem;
+        text-align: center;
+        transition: flex .5s;
+    }
+    .menu-item:hover{
+        flex: 8;
+    }
+</style>
+<body>
+    <header class="header">
+        <ul class="Menu">
+            <li class="menu-item">Home</li>
+            <li class="menu-item">Gallery</li>
+            <li class="menu-item">About</li>
+            <li class="menu-item">Contact</li>
+        </ul>
+
+    </header>
+    <section class="content">
+        <section class="contentt">Contenido</section>
+        <aside class="aside">Aside</aside>
+   
+    </section>
+    
+    <footer class="footer">Footer</footer>
+
+
+</body>
+</html>
